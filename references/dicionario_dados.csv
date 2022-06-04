@@ -1,0 +1,26 @@
+Colunas,Col_Trad,Descrição
+ID,ID,ID
+LIMIT_BAL,limite,Limte de Crédito
+SEX,sexo,(1 = masculino; 2 = feminino)
+EDUCATION,educacao,Educação (1 = pós-graduação; 2 = universidade; 3 = ensino médio; 4 = outros)
+MARRIAGE,estado_civil,Estado civil (1 = casado; 2 = solteiro; 3 = outros)
+AGE,idade,Idade
+PAY_0,status_0509,status de pagamentos em set/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+PAY_2,status_0508,status de pagamentos em ago/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+PAY_3,status_0507,status de pagamentos em jul/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+PAY_4,status_0506,status de pagamentos em jun/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+PAY_5,status_0505,status de pagamentos em mai/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+PAY_6,status_0504,status de pagamentos em abr/2005: -1 = pago devidamente; 1 = atraso de um mês; 2 = atraso de dois meses; . . .; 8 = atraso de oito meses; 9 = atraso de nove meses ou mais
+BILL_AMT1,saldo_0509,Saldo em set/2005
+BILL_AMT2,saldo_0508,Saldo em ago/2005
+BILL_AMT3,saldo_0507,Saldo em jul/2005
+BILL_AMT4,saldo_0506,Saldo em jun/2005
+BILL_AMT5,saldo_0505,Saldo em mai/2005
+BILL_AMT6,saldo_0504,Saldo em abr/2005
+PAY_AMT1,pago_0509,Valor pago em set/2005
+PAY_AMT2,pago_0508,Valor pago em ago/2005
+PAY_AMT3,pago_0507,Valor pago em jul/2005
+PAY_AMT4,pago_0506,Valor pago em jun/2005
+PAY_AMT5,pago_0505,Valor pago em mai/2005
+PAY_AMT6,pago_0504,Valor pago  em abr/2005
+default payment next month,mau,"Pagamento próximo mês (Sim = 1, Não = 0)"
