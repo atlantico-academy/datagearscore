@@ -17,6 +17,8 @@ invoke = "^1.7.0"
 pandas-profiling = {extras = ["notebook"], version = "^3.2.0"}
 xlrd = "^2.0.1"
 xgboost = "^1.6.1"
+dpcpp-cpp-rt = "^2022.1.0"
+streamlit = "^1.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
