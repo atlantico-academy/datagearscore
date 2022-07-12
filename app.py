@@ -37,7 +37,7 @@ with st.form("myform"):
     st.subheader("Insira as informações abaixo")
     col1, col2, col3, col4 = st.columns(4)
     age = col1.number_input(
-        'Informe sua idade', min_value=18, max_value=120, value=18, step=1, key='idade'
+        'Informe sua idade', min_value=18, max_value=120, step=1, key='idade'
     )
     option_marriage = col2.selectbox(
         'Escolha o seu estado civil', ('casado', 'solteiro', 'outros'), key='marriage'
