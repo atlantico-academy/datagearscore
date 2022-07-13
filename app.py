@@ -4,6 +4,10 @@ import joblib
 from PIL import Image
 import plotly.graph_objects as go
 
+from streamlit_option_menu import option_menu
+import streamlit.components.v1 as html
+
+
 
 model = joblib.load('./models/best_model.joblib')
 
@@ -14,6 +18,19 @@ st.set_page_config(
     layout="centered",
     page_icon=image
  )
+
+with st.sidebar:
+    choose = option_menu("Menu", ["Home", "Análise Exploratória", "Análise Comparativa", "Sobre nós"],
+                         icons=['house', 'book', 'book-half','person lines fill'],
+                         menu_icon="app-indicator", default_index=0,
+                         styles={
+        "container": {"padding": "5!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "25px"}, 
+        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "#02ab21"},
+    }
+    )
+
 
 if 'n' not in st.session_state:
     st.session_state['n'] = 0
