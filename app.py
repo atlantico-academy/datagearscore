@@ -22,7 +22,7 @@ st.set_page_config(
     page_icon=image
  )
 
-<<<<<<< HEAD
+
 choose = option_menu("Menu", ["Home", "Análise Exploratória", "Análise Comparativa", "Sobre nós"],
                      icons=['house', 'book', 'book-half','person lines fill'],
                      menu_icon="app-indicator", default_index=0,
@@ -70,8 +70,6 @@ if choose == "Sobre nós":
         st.write("""Aislan""")
 
 elif choose == "Home":
-
-
     if 'n' not in st.session_state:
         st.session_state['n'] = 0
 
@@ -95,59 +93,6 @@ elif choose == "Home":
         col1, col2, col3, col4 = st.columns(4)
         age = col1.number_input(
             'Informe sua idade', min_value=18, max_value=120, step=1, key='idade'
-=======
-with st.sidebar:
-    choose = option_menu("Menu", ["Home", "Análise Exploratória", "Análise Comparativa", "Sobre nós"],
-                         icons=['house', 'book', 'book-half','person lines fill'],
-                         menu_icon="app-indicator", default_index=0,
-                         styles={
-        "container": {"padding": "5!important", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "#02ab21"},
-    }
-    )
-
-
-if 'n' not in st.session_state:
-    st.session_state['n'] = 0
-
-    
-def clear_form():
-    st.session_state["idade"] = 18
-    st.session_state["marriage"] = 'casado'
-    st.session_state["sex"] = 'feminino'
-    st.session_state["education"] = 'pós-graduação'
-    st.session_state["limit"] = 0.0
-    st.session_state['n'] = 0
-
-with st.form("myform"):
-   
-    col1, col2 = st.columns(2)
-
-    col1.image(image, width=150)
-
-    col2.title("Consulte seu Score DataGear")
-    st.subheader("Insira as informações abaixo")
-    col1, col2, col3, col4 = st.columns(4)
-    age = col1.number_input(
-        'Informe sua idade', min_value=18, max_value=120, value=18, step=1, key='idade'
-    )
-    option_marriage = col2.selectbox(
-        'Escolha o seu estado civil', ('casado', 'solteiro', 'outros'), key='marriage'
-    )
-    option_sex = col3.selectbox(
-        'Escolha o seu sexo', ('feminino', 'masculino'), key='sex'
-    )
-    option_education = col4.selectbox(
-        'Escolha sua escolaridade',
-         ('pós-graduação', 'universidade', 'ensino médio', 'outros'), key='education'
-    )
-
-    with st.expander('Informações adicionais'):
-        limit_bal = st.number_input(
-            'Limite do seu cartão de crédito', min_value=0.0, step=100.0, key='limit'
->>>>>>> ccfb74c779fe0b311480f76d83bc0b7c9331e636
         )
         option_marriage = col2.selectbox(
             'Escolha o seu estado civil', ('casado', 'solteiro', 'outros'), key='marriage'
