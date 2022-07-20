@@ -407,6 +407,38 @@ scipy = "*"
 six = "*"
 
 [[package]]
+name = "imbalanced-learn"
+version = "0.9.0"
+description = "Toolbox for imbalanced dataset in machine learning."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+joblib = ">=0.11"
+numpy = ">=1.14.6"
+scikit-learn = ">=1.0.1"
+scipy = ">=1.1.0"
+threadpoolctl = ">=2.0.0"
+
+[package.extras]
+docs = ["pandas (>=0.25.0)", "tensorflow (>=2.4.3)", "keras (>=2.4.3)", "matplotlib (>=2.2.3)", "seaborn (>=0.9.0)", "memory-profiler (>=0.57.0)", "sphinx (>=4.2.0)", "sphinx-gallery (>=0.7.0)", "numpydoc (>=1.0.0)", "sphinxcontrib-bibtex (>=2.4.1)", "pydata-sphinx-theme (>=0.7.2)"]
+examples = ["pandas (>=0.25.0)", "tensorflow (>=2.4.3)", "keras (>=2.4.3)", "matplotlib (>=2.2.3)", "seaborn (>=0.9.0)"]
+optional = ["pandas (>=0.25.0)", "tensorflow (>=2.4.3)", "keras (>=2.4.3)"]
+tests = ["pandas (>=0.25.0)", "tensorflow (>=2.4.3)", "keras (>=2.4.3)", "pytest (>=5.0.1)", "pytest-cov (>=2.9.0)", "flake8 (>=3.8.2)", "black (>=21.6b0)", "mypy (>=0.770)"]
+
+[[package]]
+name = "imblearn"
+version = "0.0"
+description = "Toolbox for imbalanced dataset in machine learning."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+imbalanced-learn = "*"
+
+[[package]]
 name = "importlib-metadata"
 version = "4.11.3"
 description = "Read metadata from Python packages"
@@ -1650,6 +1682,17 @@ validators = "*"
 watchdog = {version = "*", markers = "platform_system != \"Darwin\""}
 
 [[package]]
+name = "streamlit-option-menu"
+version = "0.3.2"
+description = "streamlit-option-menu is a simple Streamlit component that allows users to select a single item from a list of options in a menu."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+streamlit = ">=0.63"
+
+[[package]]
 name = "tangled-up-in-unicode"
 version = "0.2.0"
 description = "Access to the Unicode Character Database (UCD)"
@@ -1951,7 +1994,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.8"
-content-hash = "95de07d522f1b8e9fe4511b7eeb4105a79785886e5a5b3ca4978eacf189004e7"
+content-hash = "be6b04ca1a1f27a40a53e15c7d0a697c1f40f20d807c0c4b213807423d85bfbf"
 
 [metadata.files]
 altair = [
@@ -2193,6 +2236,8 @@ idna = [
 imagehash = [
     {file = "ImageHash-4.2.1.tar.gz", hash = "sha256:a4af957814bc9832d9241247ff03f76e778f890c18147900b4540af124e93011"},
 ]
+imbalanced-learn = []
+imblearn = []
 importlib-metadata = [
     {file = "importlib_metadata-4.11.3-py3-none-any.whl", hash = "sha256:1208431ca90a8cca1a6b8af391bb53c1a2db74e5d1cef6ddced95d4b2062edc6"},
     {file = "importlib_metadata-4.11.3.tar.gz", hash = "sha256:ea4c597ebf37142f827b8f39299579e31685c31d3a438b59f469406afd0f2539"},
@@ -3059,6 +3104,7 @@ streamlit = [
     {file = "streamlit-1.10.0-py2.py3-none-any.whl", hash = "sha256:4febd37144a62177e583d6970ab50f351a2bfd4eb112cf19e38c25b12246a4db"},
     {file = "streamlit-1.10.0.tar.gz", hash = "sha256:9479d623dd4bec1fc7bd27e85d5012672351210e640889022ee7b4631c4efb2c"},
 ]
+streamlit-option-menu = []
 tangled-up-in-unicode = [
     {file = "tangled_up_in_unicode-0.2.0-py3-none-any.whl", hash = "sha256:154be12605b1687a17133aa741ae951cf9ee531c48a0c19f98d83ec5cb3cc7be"},
     {file = "tangled_up_in_unicode-0.2.0.tar.gz", hash = "sha256:de56dbaf32de1b8c65621f97b06b7de21cba18c8e61f3988a426ffe3c40fed36"},

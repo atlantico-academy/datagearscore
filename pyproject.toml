@@ -20,6 +20,8 @@ xgboost = "^1.6.1"
 dpcpp-cpp-rt = "^2022.1.0"
 streamlit = "^1.10.0"
 plotly = "^5.9.0"
+imblearn = "^0.0"
+streamlit-option-menu = "^0.3.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
