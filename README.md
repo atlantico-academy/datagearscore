@@ -1,8 +1,3 @@
-<p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-</p>
-
-
 
 # Credit Card Risck Prediction - Predição de Risco em Cartão de Crédito.
 
@@ -71,9 +66,14 @@ O principal objetivo e treinar um modelo capaz de prever a inadimplência, que d
      * Correções dos dados
      * Análise gráfica
  - 02 - Comparative analysis.ipynb
-     * cdd
-     * ddd
-     * dfdf
+     * Correlações
+     * Pré-processamento
+     * Redução de dimensionalidade
+     * Tratamento para dados faltantes
+     * Grid Search
+     * Escolha do melhor modelo
+     * Treino do melhor modelo
+     * Serialização
 
 #### references.
  - dicionario_dados.csv
@@ -152,9 +152,7 @@ Jupyter lab
 
 ## Aplicação.
 
-<div align="center">
+[Score DataGear](https://datagearscore.herokuapp.com/)
 
-![APP Stremlit](https://raw.githubusercontent.com/atlantico-academy/risk-prediction/main/aplica%C3%A7%C3%A3o.gif)
-[<img src="https://raw.githubusercontent.com/atlantico-academy/risk-prediction/main/aplica%C3%A7%C3%A3o.gif" width=300><br><sub>Score DataGear</sub>](https://datagearscore.herokuapp.com/)
+![Score DataGear](https://raw.githubusercontent.com/atlantico-academy/risk-prediction/main/aplica%C3%A7%C3%A3o.gif)
 
-  </div>
