@@ -21,7 +21,7 @@ Esta pontuação normalmente é chamada de “Credit Score”, que, dependendo d
 Este score, ainda, dependendo de políticas de crédito da instituição, definirá se o cliente vai obter o crédito e a qual taxa de juros a operação poderá ser ofertada.
 Devido ao grande volume de dados normalmente utilizados por estas instituições financeiras, a análise individual e manual de cada processo de concessão de crédito torna-se inviável. A utilização de ferramentas de inteligência artificial, como este trabalho pretende demonstrar, possibilita a análise automatizada dos dados sugerindo uma classificação ou uma probabilidade a inadimplência.
 
-![graphical abstract](https://raw.githubusercontent.com/atlantico-academy/risk-prediction/main/abstract.jpeg)
+![graphical abstract](https://raw.githubusercontent.com/atlantico-academy/datagearscore/main/abstract.jpeg)
 
 ---
 
